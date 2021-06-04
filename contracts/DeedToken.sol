@@ -160,7 +160,7 @@ contract DeedToken is ERC721, ERC165 {
         emit Approval(addr_owner, _approved, _tokenId);
     }
 
-    // 강의봐도 잘 모르겠음. 업데이트 필요
+    // 이해함
     function setApprovalForAll(address _operator, bool _approved) external {
         operators[msg.sender][_operator] = _approved;
         emit ApprovalForAll(msg.sender, _operator, _approved);
